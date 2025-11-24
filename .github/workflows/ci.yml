@@ -9,4 +9,4 @@ jobs:
       - name: Build docker Image
         run: docker build -t my-node-app -f Dockerfile.dev .
       - name: Run Tests
-        run: docker run my-node-app npm run test
+        run: docker run my-node-app npm run test -- --ci --coverage
